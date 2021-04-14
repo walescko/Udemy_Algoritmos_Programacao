@@ -1,24 +1,24 @@
 Algoritmo "Soma_media"
 //  
 //  
-//Vamos vetorizar o negócio
+//Vamos vetorizar o negÃ³cio
 
 Var
-   vet : vetor [0..3] de real
+   vet : vetor [0..9] de real
    media, soma: real
    i,n:inteiro
 
 
 Inicio
 
-   escreva("Quantos números irá digitar? ")
+   escreva("Quantos nÃºmeros irÃ¡ digitar? ")
    leia(n)
    media<-0
    soma<-0
 
 
        para i de 0 ate n-1 faca
-         escreval("Digite um número: ")
+         escreval("Digite um nÃºmero: ")
          leia (vet[i])
        fimpara
 
@@ -28,13 +28,13 @@ Inicio
 
        media<-soma/n
        escreval
-       escreva("Números digitados:")
-         para i de 0 até n-1 faca
+       escreva("NÃºmeros digitados:")
+         para i de 0 atÃ© n-1 faca
            escreva(vet[i])
          fimpara
        escreval
-       escreval("Soma dos número é: ",soma)
-       escreval("Média dos números é: ",media)
+       escreval("Soma dos nÃºmero Ã©: ",soma)
+       escreval("MÃ©dia dos nÃºmeros Ã©: ",media)
 
 
 
