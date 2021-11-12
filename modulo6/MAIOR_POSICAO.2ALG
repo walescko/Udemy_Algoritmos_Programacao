@@ -1,0 +1,42 @@
+Algoritmo "Maior_posicao"
+//  
+//  
+
+Var
+// Seção de Declarações das variáveis 
+ i : inteiro //variavel de controle  dos vetores
+ n,x: inteiro //variavel de controle de registros
+ num : vetor[0..10] de real
+ maior : real
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+   maior <- 0
+   x <- 0
+
+   escreva("Quantos registros irá fazer? ")
+   leia(n)
+   
+   para i de 0 ate n-1 faca
+        escreva("Digite o ",i,"º número: ")
+        leia(num[i])
+   fimpara
+
+    maior <- num[0]
+
+    para i de 0 ate n-1 faca
+        se (num[i]>maior) entao
+        maior <- num[i]
+        x <- i
+
+        fimse
+    fimpara
+    
+
+    escreval("Maior: ",maior)
+    escreval("Posiçao: ",x)
+
+
+Fimalgoritmo
